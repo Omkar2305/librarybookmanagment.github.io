@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+</head>
+<body>
+    <div id="lab">
+
+    </div>
+
+    <script>
+
+        class LabBooks {
+            showAllBooks() {
+                
+                alert(this.name + "Your Book is submitted for the refrance number" + this.trainno)
+            }
+            BorrowBooks() {
+                alert(this.name + "your book is borrowed for the refrence number" + this.trainno)
+            }
+            ReturnBook() {
+                alert(this.name + "your book is returned for the refrance number" + this.trianno)
+            }
+            fill(givenname, trainno) {
+                this.name = givenname
+                this.trainno = trainno
+            }
+        }
+        let omkarBooks = new LabBooks()
+        omkarBooks.fill("Omkar", 223500)
+
+
+        let gopalBooks1 = new LabBooks()
+        gopalBooks1.fill("Gopal", 223511)
+
+
+        let gopalBooks2 = new LabBooks()
+        gopalBooks2.fill("Vikas", 375611)
+
+
+        omkarBooks.showAllBooks()
+        gopalBooks1.showAllBooks()
+        gopalBooks2.showAllBooks()
+        gopalBooks1.ReturnBooks()
+    </script>
+</body>
+</html>
